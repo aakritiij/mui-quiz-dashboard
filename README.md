@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Material UI Quiz Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a responsive quiz-based dashboard developed using React and Material UI. The objective of this project is to demonstrate how a modern frontend application can be built using component-based architecture, theme customization, and responsive layouts.
 
-## Available Scripts
+The application consists of the following main sections:
 
-In the project directory, you can run:
+- **Top Navigation Bar (AppBar)**  
+  Displays the project title and includes a toggle button to switch between light and dark themes using Material UI’s ThemeProvider.
 
-### `npm start`
+- **Sidebar Navigation (Drawer)**  
+  Provides navigation options to switch between Quiz 1 and Quiz 2. The sidebar is collapsible and improves usability on smaller screens.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Main Content Area**  
+  Dynamically displays quiz content based on the selected option from the sidebar.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Instead of showing static or random UI elements, the dashboard contains two functional quizzes. Quiz 1 is displayed on the home screen, while Quiz 2 can be accessed through the sidebar navigation. Each quiz consists of multiple-choice questions, and the final score is displayed after the quiz is completed.
 
-### `npm test`
+The quiz functionality is implemented using a reusable Quiz component. This component manages the current question, handles user responses, updates the score, and determines quiz completion. Navigation between different views is handled using React state without using external routing libraries to keep the project simple and focused.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Material UI Grid is used to make the application fully responsive. The layout automatically adapts for mobile, tablet, and desktop devices using breakpoint-based grid layouts. Styling and visual enhancements are applied using Material UI theming along with a separate CSS file for better structure and readability.
 
-### `npm run build`
+This project was developed as part of an academic experiment to demonstrate responsive UI design, effective use of Material UI components, state management in React, and the integration of UI with basic application logic.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+~To run the project locally, install the dependencies using `npm install` and start the application using `npm start`. The application runs on `http://localhost:3000`.
